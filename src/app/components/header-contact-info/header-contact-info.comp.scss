@@ -1,0 +1,59 @@
+// for mobile device
+.header-contact-info {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 16px;
+  display: none;
+}
+
+// for not mobile device
+@media screen and (min-width: 600px) {
+  .header-contact-info {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 16px;
+    display: block;
+
+    &__location-wrapper {
+      padding-left: 64px;
+      padding-right: 24px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__location-icon {
+      color: #232323;
+      width: 12px;
+      vertical-align: middle;
+    }
+
+    &__location-value {
+      color: #232323;
+      vertical-align: middle;
+      margin-left: 12px;
+    }
+
+    &__email-wrapper {
+      padding-left: 24px;
+      display: flex;
+      align-items: center;
+      border-left: 1px solid #e3e3e3;
+    }
+
+    &__location-email-col {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__phone-col {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__phone-wrapper {
+      padding-right: 60px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
