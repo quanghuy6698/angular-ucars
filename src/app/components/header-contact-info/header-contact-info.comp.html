@@ -1,21 +1,27 @@
-<div class="header-contact-info">
+<div *ngIf="!isMobile" class="header-contact-info">
   <div class="row">
-    <div class="col header-contact-info__location-email-col">
+    <div class="col-4 header-contact-info__location-email-col">
       <div class="header-contact-info__location-wrapper">
-        <img src="assets/icons/font-awesome-icons/location-dot-solid.svg" class="header-contact-info__location-icon" />
-        <span class="header-contact-info__location-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+        <img src="assets/icons/ucars-icons/location.svg" class="header-contact-info__location-icon" />
+        <span class="header-contact-info__location-value">71 Ayer Rajah Crescent, #06-14, Singapore 139951</span>
       </div>
 
       <div class="header-contact-info__email-wrapper">
-        <img src="assets/icons/font-awesome-icons/envelope-solid.svg" class="header-contact-info__location-icon" />
-        <span class="header-contact-info__location-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+        <img src="assets/icons/ucars-icons/email.svg" class="header-contact-info__email-icon" />
+        <span class="header-contact-info__email-value">Email us at: hello@carbuyer.com.sg</span>
       </div>
     </div>
 
-    <div class="col header-contact-info__phone-col">
+    <div class="col-4"></div>
+
+    <div class="col-4 header-contact-info__phone-col">
       <div class="header-contact-info__phone-wrapper">
-        <img src="assets/icons/font-awesome-icons/phone-solid.svg" class="header-contact-info__location-icon" />
-        <span class="header-contact-info__location-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+        <img src="assets/icons/ucars-icons/phone.svg" class="header-contact-info__phone-icon" />
+        <p class="header-contact-info__phone-value">
+          <span>+65 8808 7905</span>
+          <br />
+          <span>+7 (700) 51 51 518</span>
+        </p>
       </div>
     </div>
   </div>

@@ -1,59 +1,77 @@
-// for mobile device
+/* for not mobile device */
 .header-contact-info {
   width: 100%;
   background-color: #ffffff;
-  padding: 16px;
-  display: none;
-}
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-// for not mobile device
-@media screen and (min-width: 600px) {
-  .header-contact-info {
-    width: 100%;
-    background-color: #ffffff;
-    padding: 16px;
-    display: block;
+  &__location-email-col {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-    &__location-wrapper {
-      padding-left: 64px;
-      padding-right: 24px;
-      display: flex;
-      align-items: center;
-    }
+  // location
+  &__location-wrapper {
+    padding-left: 64px;
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+  }
 
-    &__location-icon {
-      color: #232323;
-      width: 12px;
-      vertical-align: middle;
-    }
+  &__location-icon {
+    color: #232323;
+    width: 16px;
+    vertical-align: top;
+  }
 
-    &__location-value {
-      color: #232323;
-      vertical-align: middle;
-      margin-left: 12px;
-    }
+  &__location-value {
+    color: #232323;
+    vertical-align: middle;
+    margin-left: 12px;
+  }
 
-    &__email-wrapper {
-      padding-left: 24px;
-      display: flex;
-      align-items: center;
-      border-left: 1px solid #e3e3e3;
-    }
+  // email
+  &__email-wrapper {
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #e3e3e3;
+  }
 
-    &__location-email-col {
-      display: flex;
-      justify-content: flex-start;
-    }
+  &__email-icon {
+    color: #232323;
+    width: 16px;
+    vertical-align: top;
+  }
 
-    &__phone-col {
-      display: flex;
-      justify-content: flex-end;
-    }
+  &__email-value {
+    color: #232323;
+    vertical-align: middle;
+    margin-left: 12px;
+  }
 
-    &__phone-wrapper {
-      padding-right: 60px;
-      display: flex;
-      align-items: center;
-    }
+  // phone
+  &__phone-col {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__phone-wrapper {
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-icon {
+    color: #232323;
+    width: 16px;
+    vertical-align: top;
+  }
+
+  &__phone-value {
+    color: #232323;
+    vertical-align: middle;
+    margin-left: 12px;
+    margin-bottom: 0;
   }
 }

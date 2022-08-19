@@ -1,0 +1,96 @@
+/* for mobile device */
+.navbar-mobile {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0;
+
+  // logo
+  &__logo-wrapper {
+    padding-left: 16px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__logo {
+    height: 40px;
+    width: auto;
+  }
+
+  // search
+  &__search-wrapper {
+    padding-left: 0;
+    padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__search-icon {
+    vertical-align: middle;
+  }
+}
+
+/* for not mobile device */
+.navbar {
+  width: 100%;
+  background-color: #232323;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0;
+
+  // logo
+  &__logo-wrapper {
+    padding-left: 64px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__logo {
+    height: 34px;
+    width: auto;
+  }
+
+  // menu
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__menu {
+    margin: 0;
+    list-style-type: none;
+    vertical-align: middle;
+  }
+
+  &__menu-item {
+    display: inline-block;
+    color: #ffffff;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  // login
+  &__login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__login-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    vertical-align: middle;
+    background-color: #ee1b24;
+    border-radius: 5px;
+    color: #fff;
+  }
+}

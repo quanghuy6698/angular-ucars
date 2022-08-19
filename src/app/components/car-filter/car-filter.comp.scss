@@ -1,0 +1,37 @@
+/* for mobile device */
+.car-filter-mobile {
+  padding: 12px;
+  background-color: #fff;
+
+  &__wrapper {
+    border: 1px solid #f1f1f1;
+    padding: 6px;
+  }
+
+  &__filter-item {
+    display: block;
+  }
+
+  &__filter-item-title {
+    font-weight: 500;
+    color: #232323;
+    display: block;
+  }
+
+  &__filter-item-select {
+    width: 100%;
+    display: block;
+  }
+
+  &__filter-item-select-option {
+    color: #232323;
+    background-color: #fff;
+  }
+}
+
+/* for not mobile device */
+.car-filter {
+  &__filter-item {
+    display: inline-block;
+  }
+}

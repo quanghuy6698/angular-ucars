@@ -1,0 +1,23 @@
+<!-- For mobile device -->
+<div *ngIf="isMobile" class="get-started-banner-mobile">
+  <div class="get-started-banner-mobile__container">
+    <div class="get-started-banner-mobile__wrapper">
+      <label class="get-started-banner-mobile__title">Car Marketplace</label>
+      <p class="get-started-banner-mobile__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+      </p>
+      <button class="get-started-banner-mobile__button">Get Started</button>
+    </div>
+  </div>
+</div>
+
+<!-- For not mobile device -->
+<div *ngIf="!isMobile" class="get-started-banner">
+  <div class="get-started-banner__wrapper">
+    <label class="get-started-banner__title">Car Marketplace</label>
+    <p class="get-started-banner__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+    </p>
+    <button class="get-started-banner__button">Get Started</button>
+  </div>
+</div>

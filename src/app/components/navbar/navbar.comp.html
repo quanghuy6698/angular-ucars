@@ -1,0 +1,30 @@
+<!-- For mobile device -->
+<div *ngIf="isMobile" class="navbar-mobile row">
+  <div class="col-6 navbar-mobile__logo-wrapper">
+    <img src="assets/img/carbuyer-logo.svg" class="navbar-mobile__logo" />
+  </div>
+
+  <div class="col-6 navbar-mobile__search-wrapper">
+    <img src="assets/icons/ucars-icons/search.svg" class="navbar-mobile__search-icon" />
+  </div>
+</div>
+
+<!-- For not mobile device -->
+<div *ngIf="!isMobile" class="navbar row">
+  <div class="col-2 navbar__logo-wrapper">
+    <img src="assets/img/ucars-logo.svg" class="navbar__logo" />
+  </div>
+
+  <div class="col-8 navbar__menu-wrapper">
+    <ul class="navbar__menu">
+      <li class="navbar__menu-item">New Cars</li>
+      <li class="navbar__menu-item">Used Cars</li>
+      <li class="navbar__menu-item">Review</li>
+      <li class="navbar__menu-item">News</li>
+    </ul>
+  </div>
+
+  <div class="col-2 navbar__login-wrapper">
+    <button class="navbar__login-btn">Login</button>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<!-- For mobile device -->
+<div *ngIf="isMobile" class="car-filter-mobile">
+  <div class="car-filter-mobile__wrapper">
+    <div class="car-filter-mobile__filter-item">
+      <label class="car-filter-mobile__filter-item-title">New/Used</label>
+      <select class="car-filter-mobile__filter-item-select">
+        <option class="car-filter-mobile__filter-item-select-option" value="newAuthDealer">
+          New Car (Authorised Dealer)
+        </option>
+        <option class="car-filter-mobile__filter-item-select-option" value="newParallelImporter">
+          New Car (Parallel Importer)
+        </option>
+        <option class="car-filter-mobile__filter-item-select-option" value="used">Used Cars</option>
+      </select>
+    </div>
+    <div class="car-filter-mobile__filter-item">
+      <label class="car-filter-mobile__filter-item-title">Price Range</label>
+    </div>
+    <div class="car-filter-mobile__filter-item">
+      <label class="car-filter-mobile__filter-item-title">Vehicle Type</label>
+    </div>
+  </div>
+</div>
+
+<!-- For not mobile device -->
+<div *ngIf="!isMobile" class="car-filter">
+  <div class="car-filter__filter-item"></div>
+  <div class="car-filter__filter-item"></div>
+  <div class="car-filter__filter-item"></div>
+</div>
