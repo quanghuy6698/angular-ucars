@@ -1,4 +1,5 @@
 /* for mobile device */
+// car filter
 .car-filter-mobile {
   padding: 12px;
   background-color: #fff;
@@ -6,26 +7,257 @@
   &__wrapper {
     border: 1px solid #f1f1f1;
     padding: 6px;
+    border-radius: 4px;
   }
 
-  &__filter-item {
-    display: block;
+  &__search-btn {
+    background: #ee1b24;
+    border-radius: 5px;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
   }
+}
 
-  &__filter-item-title {
+// car state filter
+.state-filter-mobile {
+  display: block;
+  border: 1px solid #f1f1f1;
+  padding: 6px;
+  border-radius: 4px;
+
+  &__title {
     font-weight: 500;
     color: #232323;
     display: block;
   }
 
-  &__filter-item-select {
-    width: 100%;
+  &__options-wrapper {
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: 0 0 1px 1px #f1f1f1;
+    border-radius: 4px;
+
+    &--show {
+      display: block;
+      position: absolute;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__selected-value {
+    color: #5f5f5f;
+    font-size: 12px;
+  }
+
+  &__icon-col {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__icon {
+    color: #5f5f5f;
+    width: 12px;
+  }
+}
+
+// price filter
+.price-filter-mobile {
+  display: block;
+  border: 1px solid #f1f1f1;
+  padding: 6px;
+  border-radius: 4px;
+
+  &__title {
+    font-weight: 500;
+    color: #232323;
     display: block;
   }
 
-  &__filter-item-select-option {
-    color: #232323;
+  &__range-select-wrapper {
     background-color: #fff;
+    box-shadow: 0 0 1px 1px #f1f1f1;
+    border-radius: 4px;
+    display: inline-block;
+    width: 80%;
+
+    &--show {
+      display: block;
+      position: absolute;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__selected-range-label {
+    color: #5f5f5f;
+    font-size: 12px;
+  }
+
+  &__icon-col {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__icon {
+    color: #5f5f5f;
+    width: 12px;
+  }
+
+  &__dash {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__dash-text {
+    vertical-align: middle;
+  }
+
+  &__price-limit {
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    padding: 4px;
+  }
+
+  &__price-label {
+    color: #5f5f5f;
+    font-size: 12px;
+    display: block;
+  }
+
+  &__price-value {
+    color: #232323;
+    font-size: 12px;
+    display: block;
+  }
+
+  &__price-select-wrapper {
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: 0 0 1px 1px #f1f1f1;
+    border-radius: 4px;
+    max-height: 120px;
+    overflow-y: scroll;
+
+    &--show {
+      display: block;
+      position: absolute;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__buttons-wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  &__buttons {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid #f1f1f1;
+  }
+
+  &__clear-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__save-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__clear-btn {
+    background-color: transparent;
+    color: #b4b4b4;
+    font-weight: 600;
+  }
+
+  &__save-btn {
+    background: #ee1b24;
+    color: #fff;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 600;
+  }
+}
+
+// vehicle type filter
+.vehicle-type-filter-mobile {
+  display: block;
+  border: 1px solid #f1f1f1;
+  padding: 6px;
+  border-radius: 4px;
+
+  &__title {
+    font-weight: 500;
+    color: #232323;
+    display: block;
+  }
+
+  &__selected-value {
+    color: #5f5f5f;
+    font-size: 12px;
+  }
+
+  &__options-wrapper {
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: 0 0 1px 1px #f1f1f1;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+
+    &--show {
+      position: absolute;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__icon-col {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__icon {
+    color: #5f5f5f;
+    width: 12px;
+  }
+
+  &__vehicle-type-form-wrapper {
+    padding-right: 8px;
+  }
+
+  &__vehicle-type-form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__vehicle-type-input {
+    vertical-align: middle;
+  }
+
+  &__vehicle-type-label {
+    vertical-align: middle;
+    font-size: 12px;
+    margin-left: 4px;
   }
 }
 
@@ -34,4 +266,10 @@
   &__filter-item {
     display: inline-block;
   }
+}
+
+// custom form check input radio
+.form-check-input:checked {
+  background-color: #ee1b24;
+  border-color: #ee1b24;
 }
