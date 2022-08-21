@@ -33,7 +33,7 @@ export class CarFilterComp extends BaseComp {
 
   // Vehicle type filter
   public vehicleTypeOptions = CAR_VEHICLE_TYPE_FILTER;
-  public vehicleTypeSelected = [];
+  public vehicleTypesSelected: string = "+0 selected";
   public vehicleTypeKeys = Object.keys(this.vehicleTypeOptions);
 
   public carFilterForm = this.fb.group({
@@ -240,10 +240,27 @@ export class CarFilterComp extends BaseComp {
     this.isShowVehicleTypeFilter = !this.isShowVehicleTypeFilter;
   }
 
+  onClearVehicleTypesSelected() {
+    const doVehicleTypeList = this.vehicleTypeList.value;
+    const doVehicleTypeListLen = doVehicleTypeList.length;
+    for (let i = 0; i < doVehicleTypeListLen; i++) {
+      this.getVehicleTypeForm(i).controls["isSelected"].setValue(false);
+    }
+  }
+
+  onSaveVehicleTypesSelected() {
+    let doVehicleTypesSelected = 0;
+    const doVehicleTypeList = this.vehicleTypeList.value;
+    doVehicleTypeList.forEach((vehicleType: any) => {
+      if (vehicleType.isSelected) {
+        doVehicleTypesSelected++;
+      }
+    });
+    this.vehicleTypesSelected = "+" + doVehicleTypesSelected + " selected";
+  }
+
   /**
    * On filter cars
    */
-  carFilter() {
-    console.log(this.carFilterForm.get("carState")?.value);
-  }
+  carFilter() {}
 }

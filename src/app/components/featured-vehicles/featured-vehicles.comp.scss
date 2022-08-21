@@ -1,0 +1,90 @@
+/* for mobile device */
+// featured vehicles
+.featured-vehicles-mobile {
+  background-color: #e0e0e0;
+
+  &__products-wrapper {
+    padding: 12px;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  &__view-more {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  &__view-more-btn {
+    background: #ee1b24;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 4px;
+  }
+
+  &__intro-wrapper {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__intro-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ee1b24;
+  }
+
+  &__intro-description {
+    font-weight: 400;
+    font-size: 12px;
+    color: #232323;
+    margin: 0;
+  }
+}
+
+/* for not mobile device */
+// featured vehicles
+.featured-vehicles {
+  background-color: #fff;
+
+  &__products-wrapper {
+    padding: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  &__view-more {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__view-more-btn {
+    background: #ee1b24;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 4px;
+    align-self: center;
+  }
+
+  &__intro-title {
+    font-weight: 700;
+    font-size: 34px;
+    color: #ee1b24;
+  }
+
+  &__intro-description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #232323;
+    margin: 0;
+  }
+}

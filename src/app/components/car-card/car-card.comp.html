@@ -1,0 +1,32 @@
+<div class="car-card-wrapper">
+  <div class="car-card">
+    <div>
+      <img class="car-card__img" [src]="car.imgSrc" />
+    </div>
+
+    <div class="car-card__description">
+      <div>
+        <label class="car-card__name">{{car.name}}</label>
+      </div>
+
+      <div class="car-card__price-wrapper">
+        <span>From</span>
+        <span>&nbsp;&nbsp;</span>
+        <span class="car-card__price">${{car.price}}</span>
+        <span>&nbsp;&nbsp;</span>
+        <span class="car-card__price-per-month"> ${{car.pricePerMonth}}/mo </span>
+      </div>
+
+      <div>
+        <span class="car-card__variants">{{car.variants}} variants</span>
+        <span class="car-card__with-coe" *ngIf="car.isWithCOE"> | with COE</span>
+      </div>
+
+      <div class="car-card__brand-wrapper">
+        <img class="car-card__brand-logo" [src]="carBrand.imgSrc" />
+        <span>&nbsp;&nbsp;</span>
+        <span>{{carBrand.label}}</span>
+      </div>
+    </div>
+  </div>
+</div>

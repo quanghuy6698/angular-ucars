@@ -1,0 +1,25 @@
+{
+  "featuredVehiclesData": [
+    {
+      "name": "The Palace",
+      "imgSrc": "assets/img/featured-vehicles/the-palace.png",
+      "price": 2000,
+      "description": "Lekki, phase 2",
+      "type": "Duplex"
+    },
+    {
+      "name": "IVY RORY",
+      "imgSrc": "assets/img/featured-vehicles/ivy-rory.png",
+      "price": 3000,
+      "description": "Lekki, phase 2",
+      "type": "Duplex"
+    },
+    {
+      "name": "REXONA",
+      "imgSrc": "assets/img/featured-vehicles/rexona.png",
+      "price": 2400,
+      "description": "Lekki, phase 2",
+      "type": "Duplex Y"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+<!-- For mobile device -->
+<div *ngIf="isMobile" class="footer-mobile">
+  <!-- Carbuyer logo -->
+  <div class="footer-mobile__logo-wrapper">
+    <img src="assets/img/carbuyer-logo.svg" class="footer-mobile__logo" />
+  </div>
+
+  <!-- Contact -->
+  <div class="footer-mobile__contact-wrapper">
+    <div class="footer-mobile__contact-icon-wrapper">
+      <img src="assets/icons/ucars-icons/location.svg" class="footer-mobile__contact-icon" />
+    </div>
+    <div class="footer-mobile__contact-value">
+      <span>71 Ayer Rajah Crescent, #06-14, Singapore 139951</span>
+    </div>
+
+    <div class="footer-mobile__contact-icon-wrapper">
+      <img src="assets/icons/ucars-icons/phone.svg" class="footer-mobile__contact-icon" />
+    </div>
+    <div class="footer-mobile__contact-value">
+      <span>+65 8808 7905</span>
+    </div>
+
+    <div class="footer-mobile__contact-icon-wrapper">
+      <img src="assets/icons/ucars-icons/email.svg" class="footer-mobile__contact-icon" />
+    </div>
+    <div class="footer-mobile__contact-value">
+      <span>hello@carbuyer.com.sg</span>
+    </div>
+  </div>
+
+  <!-- Info -->
+  <div class="footer-mobile__info-wrapper">
+    <div class="footer-mobile__info-item-wrapper">
+      <div class="footer-mobile__info-item row ps-4 pe-4 pt-2 pb-2">
+        <div class="footer-mobile__info-item-title col-10 p-0">About</div>
+        <div class="col-2 p-0 footer-mobile__info-item-icon-wrapper">
+          <img class="footer-mobile__info-item-icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-mobile__info-item-wrapper">
+      <div class="footer-mobile__info-item row ps-4 pe-4 pt-2 pb-2">
+        <div class="footer-mobile__info-item-title col-10 p-0">Services</div>
+        <div class="col-2 p-0 footer-mobile__info-item-icon-wrapper">
+          <img class="footer-mobile__info-item-icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-mobile__info-item-wrapper">
+      <div class="footer-mobile__info-item row ps-4 pe-4 pt-2 pb-2">
+        <div class="footer-mobile__info-item-title col-10 p-0">Resources</div>
+        <div class="col-2 p-0 footer-mobile__info-item-icon-wrapper">
+          <img class="footer-mobile__info-item-icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-mobile__info-item-wrapper">
+      <div class="footer-mobile__info-item row ps-4 pe-4 pt-2 pb-2">
+        <div class="footer-mobile__info-item-title col-10 p-0">Legal</div>
+        <div class="col-2 p-0 footer-mobile__info-item-icon-wrapper">
+          <img class="footer-mobile__info-item-icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email Subscribe -->
+  <div class="footer-mobile__email-wrapper">
+    <label class="footer-mobile__email-notice"
+      >Get the <span class="text-danger">latest</span> automotive news sent to your inbox!</label
+    >
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Enter your email" aria-describedby="enterYourEmail" />
+      <div class="input-group-append">
+        <button class="input-group-text footer-mobile__subscribe-btn" id="enterYourEmail">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Follow -->
+  <div class="footer-mobile__follow-wrapper">
+    <label class="footer-mobile__follow-title">Follow us</label>
+
+    <img class="footer-mobile__follow-icon" src="assets/icons/ucars-icons/instagram.svg" />
+    <img class="footer-mobile__follow-icon" src="assets/icons/ucars-icons/facebook.svg" />
+    <img class="footer-mobile__follow-icon" src="assets/icons/ucars-icons/telegram.svg" />
+    <img class="footer-mobile__follow-icon" src="assets/icons/ucars-icons/linkedin.svg" />
+    <img class="footer-mobile__follow-icon" src="assets/icons/ucars-icons/youtube.svg" />
+  </div>
+
+  <!-- Brand trademark -->
+  <div class="footer-mobile__brand-trademark row p-2">
+    <div class="col-3 p-2">
+      <img src="assets/img/ucars-logo.svg" class="footer-mobile__ucars-logo" />
+    </div>
+
+    <div class="col-9 p-2">
+      <p class="footer-mobile__trademark-text">
+        CarBuyer Pte Ltd and the CarBuyer Singapore brand are wholly owned by UCARS Pte Ltd
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Copyright -->
+<div *ngIf="isMobile" class="footer-mobile__copyright">
+  <span>© 2022. All rights reserved.</span>
+</div>
+
+<!-- For not mobile device -->
+<div *ngIf="!isMobile" class="footer">
+  <div class="footer__container-wrapper">
+    <div class="p-2">
+      <!-- Carbuyer logo -->
+      <div class="footer__logo-wrapper">
+        <img src="assets/img/carbuyer-logo.svg" class="footer__logo" />
+      </div>
+
+      <!-- Contact -->
+      <div class="footer__contact-wrapper">
+        <div class="footer__contact-icon-wrapper">
+          <img src="assets/icons/ucars-icons/location.svg" class="footer__contact-icon" />
+        </div>
+        <div class="footer__contact-value">
+          <span>71 Ayer Rajah Crescent, #06-14, Singapore 139951</span>
+        </div>
+
+        <div class="footer__contact-icon-wrapper">
+          <img src="assets/icons/ucars-icons/phone.svg" class="footer__contact-icon" />
+        </div>
+        <div class="footer__contact-value">
+          <span>+65 8808 7905</span>
+        </div>
+
+        <div class="footer__contact-icon-wrapper">
+          <img src="assets/icons/ucars-icons/email.svg" class="footer__contact-icon" />
+        </div>
+        <div class="footer__contact-value">
+          <span>hello@carbuyer.com.sg</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-2">
+      <!-- Info -->
+      <div class="footer__info-wrapper">
+        <div class="footer__info-col">
+          <label class="footer__info-gr-title">About</label>
+          <label class="footer__info-title">About Us</label>
+          <label class="footer__info-title">Contact Us</label>
+          <label class="footer__info-title">Careers</label>
+        </div>
+        <div class="footer__info-col">
+          <label class="footer__info-gr-title">Services</label>
+          <label class="footer__info-title">Buy Used Cars</label>
+          <label class="footer__info-title">Buy New Cars</label>
+          <label class="footer__info-title">Be a Dealer with UCARS</label>
+        </div>
+        <div class="footer__info-col">
+          <label class="footer__info-gr-title">Resources</label>
+          <label class="footer__info-title">New</label>
+          <label class="footer__info-title">Sell My Car</label>
+          <label class="footer__info-title">COE Price</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-2">
+      <label>Get the <span class="text-danger">latest</span> automotive news sent to your inbox!</label>
+      <!-- Email Subscribe -->
+      <div class="footer__email-wrapper">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter your email" aria-describedby="enterYourEmail" />
+          <div class="input-group-append">
+            <button class="input-group-text footer__subscribe-btn" id="enterYourEmail">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Follow -->
+      <div class="footer__follow-wrapper">
+        <label class="footer__follow-title">Follow us</label>
+
+        <img class="footer__follow-icon" src="assets/icons/ucars-icons/instagram.svg" />
+        <img class="footer__follow-icon" src="assets/icons/ucars-icons/facebook.svg" />
+        <img class="footer__follow-icon" src="assets/icons/ucars-icons/telegram.svg" />
+        <img class="footer__follow-icon" src="assets/icons/ucars-icons/linkedin.svg" />
+        <img class="footer__follow-icon" src="assets/icons/ucars-icons/youtube.svg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand trademark -->
+  <div class="footer__brand-trademark p-2">
+    <div>
+      <label>Advertising Terms and Conditions Platform Terms and Conditions Privacy Policy</label>
+    </div>
+    <div>
+      <img src="assets/img/ucars-logo.svg" class="footer__ucars-logo" />
+      <label class="footer__trademark-text">
+        CarBuyer Pte Ltd and the CarBuyer Singapore brand are wholly owned by UCARS Pte Ltd
+      </label>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<!-- For mobile device -->
+<div *ngIf="isMobile" class="featured-vehicles-mobile">
+  <div class="p-2 featured-vehicles-mobile__intro-wrapper">
+    <label class="featured-vehicles-mobile__intro-title">Our Featured Vehicles.</label>
+    <p class="featured-vehicles-mobile__intro-description">
+      One of our biggest product to be featured and that has sold out the most.
+    </p>
+  </div>
+
+  <div class="featured-vehicles-mobile__products-wrapper">
+    <div *ngFor="let vehicle of featuredVehicles">
+      <featured-vehicle-card-comp [featuredVehicle]="vehicle"> </featured-vehicle-card-comp>
+    </div>
+  </div>
+
+  <div class="featured-vehicles-mobile__view-more">
+    <button class="featured-vehicles-mobile__view-more-btn">View more</button>
+  </div>
+</div>
+<!-- For not mobile device -->
+<div *ngIf="!isMobile" class="featured-vehicles">
+  <div class="featured-vehicles__intro-wrapper row p-4">
+    <div class="col-8 p-4">
+      <label class="featured-vehicles__intro-title">Our Featured Vehicles.</label>
+      <p class="featured-vehicles__intro-description">
+        One of our biggest product to be featured and that has sold out the most.
+      </p>
+    </div>
+
+    <div class="col-4 p-4 featured-vehicles__view-more">
+      <button class="featured-vehicles__view-more-btn">View more</button>
+    </div>
+  </div>
+
+  <div class="featured-vehicles__products-wrapper">
+    <div *ngFor="let vehicle of featuredVehicles">
+      <featured-vehicle-card-comp [featuredVehicle]="vehicle"> </featured-vehicle-card-comp>
+    </div>
+  </div>
+</div>

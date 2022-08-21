@@ -1,0 +1,17 @@
+<!-- For mobile device-->
+<div *ngIf="isMobile" class="question-banner-mobile">
+  <div class="question-banner-mobile__label-wrapper">
+    <label class="question-banner-mobile__label">Questions about buying or renting?</label>
+  </div>
+  <div class="question-banner-mobile__ask-wrapper">
+    <button class="question-banner-mobile__ask-btn">Ask Us</button>
+  </div>
+</div>
+
+<!-- For not mobile device-->
+<div *ngIf="!isMobile" class="question-banner">
+  <div class="question-banner__wrapper">
+    <label class="question-banner__label">Questions about buying or renting?</label>
+    <button class="question-banner__ask-btn">Ask Us</button>
+  </div>
+</div>

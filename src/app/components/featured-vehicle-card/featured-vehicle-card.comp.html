@@ -1,0 +1,25 @@
+<div class="featured-vehicle-card-wrapper">
+  <div class="featured-vehicle-card">
+    <div>
+      <img [src]="featuredVehicle.imgSrc" class="featured-vehicle-card__img" />
+    </div>
+
+    <div class="featured-vehicle-card__info-wrapper">
+      <div>
+        <label class="featured-vehicle-card__name">{{featuredVehicle.name}}</label>
+      </div>
+
+      <div class="featured-vehicle-card__label-wrapper">
+        <label class="featured-vehicle-card__type">{{featuredVehicle.type}}</label>
+      </div>
+
+      <div>
+        <label class="featured-vehicle-card__description">{{featuredVehicle.description}}</label>
+      </div>
+
+      <div>
+        <label class="featured-vehicle-card__price">${{featuredVehicle.price}}</label>
+      </div>
+    </div>
+  </div>
+</div>

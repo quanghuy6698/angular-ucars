@@ -1,0 +1,74 @@
+{
+  "carsData": [
+    {
+      "name": "BMW X3",
+      "imgSrc": "assets/img/cars/bmw-x3.png",
+      "price": 248000,
+      "pricePerMonth": 2302,
+      "variants": 4,
+      "isWithCOE": true,
+      "vehicleType": "sportCar",
+      "brand": "bmw"
+    },
+    {
+      "name": "Alpine A110",
+      "imgSrc": "assets/img/cars/alpine-a110.png",
+      "price": 488000,
+      "pricePerMonth": 2302,
+      "variants": 3,
+      "isWithCOE": true,
+      "vehicleType": "sedan",
+      "brand": "alpine"
+    },
+    {
+      "name": "Aston Martin DBS Super",
+      "imgSrc": "assets/img/cars/aston-martin-dbs-super.png",
+      "price": 548000,
+      "pricePerMonth": 2302,
+      "variants": 1,
+      "isWithCOE": false,
+      "vehicleType": "suv",
+      "brand": "astonMartin"
+    },
+    {
+      "name": "Alfa Romeo Stelvio",
+      "imgSrc": "assets/img/cars/alfa-romeo-stelvio.png",
+      "price": 278000,
+      "pricePerMonth": 2702,
+      "variants": 4,
+      "isWithCOE": true,
+      "vehicleType": "mvp",
+      "brand": "bmw"
+    },
+    {
+      "name": "Aston Martin DB11 Volante",
+      "imgSrc": "assets/img/cars/aston-martin-db11-volante.png",
+      "price": 248000,
+      "pricePerMonth": 2402,
+      "variants": 2,
+      "isWithCOE": true,
+      "vehicleType": "sportCar",
+      "brand": "astonMartin"
+    },
+    {
+      "name": "Aston Martin DB11",
+      "imgSrc": "assets/img/cars/aston-martin-db11.png",
+      "price": 218000,
+      "pricePerMonth": 2202,
+      "variants": 5,
+      "isWithCOE": true,
+      "vehicleType": "sportCar",
+      "brand": "astonMartin"
+    },
+    {
+      "name": "Aston Martin DB11 VolanteX",
+      "imgSrc": "assets/img/cars/aston-martin-db11-volante-x.png",
+      "price": 208000,
+      "pricePerMonth": 2402,
+      "variants": 2,
+      "isWithCOE": true,
+      "vehicleType": "sportCar",
+      "brand": "astonMartin"
+    }
+  ]
+}

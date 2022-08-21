@@ -1,1 +1,30 @@
+<!-- For mobile device -->
+<div *ngIf="isMobile" class="car-products-mobile">
+  <div class="car-products-mobile__products-wrapper">
+    <div *ngFor="let car of cars">
+      <car-card-comp [car]="car"> </car-card-comp>
+    </div>
+    <div>
+      <ads-card-comp></ads-card-comp>
+    </div>
+  </div>
 
+  <div class="car-products-mobile__view-more">
+    <button class="car-products-mobile__view-more-btn">View more new cars</button>
+  </div>
+</div>
+<!-- For not mobile device -->
+<div *ngIf="!isMobile" class="car-products">
+  <div class="car-products__products-wrapper">
+    <div>
+      <ads-card-comp></ads-card-comp>
+    </div>
+    <div *ngFor="let car of cars">
+      <car-card-comp [car]="car"> </car-card-comp>
+    </div>
+  </div>
+
+  <div class="car-products__view-more">
+    <button class="car-products__view-more-btn">View more new cars</button>
+  </div>
+</div>

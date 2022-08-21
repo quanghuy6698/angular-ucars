@@ -1,1 +1,55 @@
+/* for mobile device */
+// car products
+.car-products-mobile {
+  &__products-wrapper {
+    padding: 12px;
+    background-color: #fff;
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  &__view-more {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  &__view-more-btn {
+    padding: 8px 16px;
+    background: #ffffff;
+    color: #ee1b24;
+    border: 1px solid #ee1b24;
+    border-radius: 4px;
+  }
+}
+
+/* for not mobile device */
+// car products
+.car-products {
+  &__products-wrapper {
+    padding: 12px;
+    background-color: #fff;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  &__view-more {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  &__view-more-btn {
+    padding: 8px 16px;
+    background: #ffffff;
+    color: #ee1b24;
+    border: 1px solid #ee1b24;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,124 @@
+/* For mobile device */
+@media screen and (max-width: 600px) {
+  .service-provided {
+    background-color: #232323;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    &__title {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__main-title {
+      font-weight: 700;
+      font-size: 32px;
+      color: #ee1b24;
+    }
+
+    &__sub-title {
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    &__items-wrapper {
+      display: block;
+    }
+
+    &__item {
+      display: block;
+      justify-content: center;
+      text-align: center;
+      padding: 12px;
+    }
+
+    &__item-icon-wrapper {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item-icon {
+      width: 74px;
+    }
+
+    &__item-label {
+      font-weight: 500;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    &__item-description {
+      font-weight: 200;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 0;
+    }
+  }
+}
+
+/* For not mobile device */
+@media screen and (min-width: 600px) {
+  .service-provided {
+    background-color: #232323;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    &__title {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__main-title {
+      font-weight: 700;
+      font-size: 32px;
+      color: #ee1b24;
+      display: block;
+    }
+
+    &__sub-title {
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+      display: block;
+    }
+
+    &__items-wrapper {
+      display: grid;
+      grid-template-columns: 33% 34% 33%;
+    }
+
+    &__item {
+      display: block;
+      justify-content: center;
+      text-align: center;
+      padding: 34px;
+    }
+
+    &__item-icon-wrapper {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item-icon {
+      width: 74px;
+    }
+
+    &__item-label {
+      font-weight: 500;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    &__item-description {
+      font-weight: 200;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 0;
+    }
+  }
+}

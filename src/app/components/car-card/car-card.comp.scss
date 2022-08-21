@@ -1,0 +1,55 @@
+.car-card-wrapper {
+  background-color: #fff;
+  padding: 8px;
+  min-width: 300px;
+}
+
+.car-card {
+  background-color: #fff;
+  box-shadow: 0 0 2px 2px #f1f1f1;
+  border-radius: 4px;
+
+  &__img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  &__name {
+    font-weight: 600;
+    color: #232323;
+  }
+
+  &__description {
+    border-top: 2px solid #f1f1f1;
+    padding: 8px;
+  }
+
+  &__price {
+    color: #0f5edd;
+    font-weight: 600;
+  }
+
+  &__price-per-month {
+    color: #0f5edd;
+    padding-right: 4px;
+    background: #e5eefb;
+    border-radius: 2px;
+  }
+
+  &__variants {
+    color: #5f5f5f;
+  }
+
+  &__with-coe {
+    color: #5f5f5f;
+  }
+
+  &__brand-wrapper {
+    padding-top: 8px;
+  }
+
+  &__brand-logo {
+    width: 32px;
+  }
+}
