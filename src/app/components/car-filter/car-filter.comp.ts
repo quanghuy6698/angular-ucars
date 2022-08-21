@@ -103,6 +103,8 @@ export class CarFilterComp extends BaseComp {
 
   /**
    * Hide all filter popup
+   *
+   * @param except: except popup
    */
   hideAllPopup(except?: string) {
     switch (except) {
@@ -240,6 +242,9 @@ export class CarFilterComp extends BaseComp {
     this.isShowVehicleTypeFilter = !this.isShowVehicleTypeFilter;
   }
 
+  /**
+   * On Clear vehicle type filter
+   */
   onClearVehicleTypesSelected() {
     const doVehicleTypeList = this.vehicleTypeList.value;
     const doVehicleTypeListLen = doVehicleTypeList.length;
@@ -248,6 +253,9 @@ export class CarFilterComp extends BaseComp {
     }
   }
 
+  /**
+   * On save vehicle type filter
+   */
   onSaveVehicleTypesSelected() {
     let doVehicleTypesSelected = 0;
     const doVehicleTypeList = this.vehicleTypeList.value;
