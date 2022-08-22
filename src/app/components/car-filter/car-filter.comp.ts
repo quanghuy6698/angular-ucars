@@ -270,7 +270,9 @@ export class CarFilterComp extends BaseComp {
         doVehicleTypesSelected++;
       }
     });
+
     this.vehicleTypesSelected = "+" + doVehicleTypesSelected + " selected";
+    this.hideAllPopup();
   }
 
   /**
