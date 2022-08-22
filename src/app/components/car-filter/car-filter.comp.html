@@ -8,10 +8,15 @@
         <!-- State filter label -->
         <div class="row" (click)="onShowStateFilter()">
           <div class="col-10">
-            <label class="state-filter-mobile__selected-value">{{stateSelected.label}}</label>
+            <label class="state-filter-mobile__selected-value"
+              >{{stateSelected.label}}</label
+            >
           </div>
           <div class="col-2 state-filter-mobile__icon-col">
-            <img class="state-filter-mobile__icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+            <img
+              class="state-filter-mobile__icon"
+              src="assets/icons/ucars-icons/chevron-down.svg"
+            />
           </div>
         </div>
         <!-- State filter popup-->
@@ -20,8 +25,17 @@
           [ngClass]="{'state-filter-mobile__options-wrapper--show': isShowStateFilter, 'state-filter-mobile__options-wrapper--hide': !isShowStateFilter}"
         >
           <div class="form-check" *ngFor="let key of carStateKeys">
-            <input class="form-check-input" type="radio" [value]="key" [id]="key" formControlName="carState" />
-            <label class="form-check-label" [for]="key"> {{carStateOptions[key].label}} </label>
+            <input
+              class="form-check-input"
+              type="radio"
+              [value]="key"
+              [id]="key"
+              formControlName="carState"
+              (change)="onSelectState()"
+            />
+            <label class="form-check-label" [for]="key">
+              {{carStateOptions[key].label}}
+            </label>
           </div>
         </div>
       </div>
@@ -32,10 +46,15 @@
         <!-- Price filter label -->
         <div class="row" (click)="onShowPriceFilter()">
           <div class="col-10">
-            <label class="price-filter-mobile__selected-range-label">{{priceRangeLabel}}</label>
+            <label class="price-filter-mobile__selected-range-label"
+              >{{priceRangeLabel}}</label
+            >
           </div>
           <div class="col-2 price-filter-mobile__icon-col">
-            <img class="price-filter-mobile__icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+            <img
+              class="price-filter-mobile__icon"
+              src="assets/icons/ucars-icons/chevron-down.svg"
+            />
           </div>
         </div>
         <!-- Price filter -->
@@ -45,18 +64,32 @@
         >
           <!-- Price filter range label -->
           <div class="row p-2 m-0">
-            <div class="col-5 price-filter-mobile__price-limit" (click)="onShowMinPriceSelect()">
-              <label for="minPrice" class="price-filter-mobile__price-label">Min</label>
-              <label for="minPrice" class="price-filter-mobile__price-value">{{minPriceSelected.label}}</label>
+            <div
+              class="col-5 price-filter-mobile__price-limit"
+              (click)="onShowMinPriceSelect()"
+            >
+              <label for="minPrice" class="price-filter-mobile__price-label"
+                >Min</label
+              >
+              <label for="minPrice" class="price-filter-mobile__price-value"
+                >{{minPriceSelected.label}}</label
+              >
             </div>
 
             <div class="col-2 p-0 price-filter-mobile__dash">
               <label class="price-filter-mobile__dash-text">-</label>
             </div>
 
-            <div class="col-5 price-filter-mobile__price-limit" (click)="onShowMaxPriceSelect()">
-              <label for="maxPrice" class="price-filter-mobile__price-label">Max</label>
-              <label for="minPrice" class="price-filter-mobile__price-value">{{maxPriceSelected.label}}</label>
+            <div
+              class="col-5 price-filter-mobile__price-limit"
+              (click)="onShowMaxPriceSelect()"
+            >
+              <label for="maxPrice" class="price-filter-mobile__price-label"
+                >Max</label
+              >
+              <label for="minPrice" class="price-filter-mobile__price-value"
+                >{{maxPriceSelected.label}}</label
+              >
             </div>
           </div>
 
@@ -77,7 +110,9 @@
                     formControlName="minPrice"
                     (change)="onChangeMinPrice()"
                   />
-                  <label class="form-check-label" [for]="key"> {{carPriceOptions[key].label}} </label>
+                  <label class="form-check-label" [for]="key">
+                    {{carPriceOptions[key].label}}
+                  </label>
                 </div>
               </div>
             </div>
@@ -97,7 +132,9 @@
                     formControlName="maxPrice"
                     (change)="onChangeMaxPrice()"
                   />
-                  <label class="form-check-label" [for]="key"> {{carPriceOptions[key].label}} </label>
+                  <label class="form-check-label" [for]="key">
+                    {{carPriceOptions[key].label}}
+                  </label>
                 </div>
               </div>
             </div>
@@ -107,11 +144,21 @@
           <div class="price-filter-mobile__buttons-wrapper">
             <div class="row m-0 price-filter-mobile__buttons">
               <div class="col-6 p-0 price-filter-mobile__clear-wrapper">
-                <button class="price-filter-mobile__clear-btn" (click)="onClearPriceRange()">Clear</button>
+                <button
+                  class="price-filter-mobile__clear-btn"
+                  (click)="onClearPriceRange()"
+                >
+                  Clear
+                </button>
               </div>
 
               <div class="col-6 p-0 price-filter-mobile__save-wrapper">
-                <button class="price-filter-mobile__save-btn" (click)="onSavePriceRange()">Save</button>
+                <button
+                  class="price-filter-mobile__save-btn"
+                  (click)="onSavePriceRange()"
+                >
+                  Save
+                </button>
               </div>
             </div>
           </div>
@@ -124,10 +171,15 @@
         <!-- Vehicle type filter label -->
         <div class="row" (click)="onShowVehicleTypeFilter()">
           <div class="col-10">
-            <label class="vehicle-type-filter-mobile__selected-value">{{vehicleTypesSelected}}</label>
+            <label class="vehicle-type-filter-mobile__selected-value"
+              >{{vehicleTypesSelected}}</label
+            >
           </div>
           <div class="col-2 vehicle-type-filter-mobile__icon-col">
-            <img class="vehicle-type-filter-mobile__icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+            <img
+              class="vehicle-type-filter-mobile__icon"
+              src="assets/icons/ucars-icons/chevron-down.svg"
+            />
           </div>
         </div>
         <!-- Vehicle type filter popup -->
@@ -152,7 +204,10 @@
                   id="type"
                   formControlName="isSelected"
                 />
-                <label class="vehicle-type-filter-mobile__vehicle-type-label" for="type">
+                <label
+                  class="vehicle-type-filter-mobile__vehicle-type-label"
+                  for="type"
+                >
                   {{getVehicleTypeFormLabel(i)}}
                 </label>
               </form>
@@ -163,13 +218,19 @@
           <div class="vehicle-type-filter-mobile__buttons-wrapper">
             <div class="row m-0 vehicle-type-filter-mobile__buttons">
               <div class="col-6 p-0 vehicle-type-filter-mobile__clear-wrapper">
-                <button class="vehicle-type-filter-mobile__clear-btn" (click)="onClearVehicleTypesSelected()">
+                <button
+                  class="vehicle-type-filter-mobile__clear-btn"
+                  (click)="onClearVehicleTypesSelected()"
+                >
                   Clear
                 </button>
               </div>
 
               <div class="col-6 p-0 vehicle-type-filter-mobile__save-wrapper">
-                <button class="vehicle-type-filter-mobile__save-btn" (click)="onSaveVehicleTypesSelected()">
+                <button
+                  class="vehicle-type-filter-mobile__save-btn"
+                  (click)="onSaveVehicleTypesSelected()"
+                >
                   Save
                 </button>
               </div>
@@ -178,7 +239,9 @@
         </div>
       </div>
 
-      <button class="car-filter-mobile__search-btn" (click)="carFilter()">Search</button>
+      <button class="car-filter-mobile__search-btn" (click)="carFilter()">
+        Search
+      </button>
     </div>
   </form>
 </div>
@@ -193,10 +256,15 @@
         <!-- State filter label -->
         <div class="row" (click)="onShowStateFilter()">
           <div class="col-10">
-            <label class="state-filter__selected-value">{{stateSelected.label}}</label>
+            <label class="state-filter__selected-value"
+              >{{stateSelected.label}}</label
+            >
           </div>
           <div class="col-2 state-filter__icon-col">
-            <img class="state-filter__icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+            <img
+              class="state-filter__icon"
+              src="assets/icons/ucars-icons/chevron-down.svg"
+            />
           </div>
         </div>
         <!-- State filter popup-->
@@ -205,8 +273,17 @@
           [ngClass]="{'state-filter__options-wrapper--show': isShowStateFilter, 'state-filter__options-wrapper--hide': !isShowStateFilter}"
         >
           <div class="form-check" *ngFor="let key of carStateKeys">
-            <input class="form-check-input" type="radio" [value]="key" [id]="key" formControlName="carState" />
-            <label class="form-check-label" [for]="key"> {{carStateOptions[key].label}} </label>
+            <input
+              class="form-check-input"
+              type="radio"
+              [value]="key"
+              [id]="key"
+              formControlName="carState"
+              (change)="onSelectState()"
+            />
+            <label class="form-check-label" [for]="key">
+              {{carStateOptions[key].label}}
+            </label>
           </div>
         </div>
       </div>
@@ -217,10 +294,15 @@
         <!-- Price filter label -->
         <div class="row" (click)="onShowPriceFilter()">
           <div class="col-10">
-            <label class="price-filter__selected-range-label">{{priceRangeLabel}}</label>
+            <label class="price-filter__selected-range-label"
+              >{{priceRangeLabel}}</label
+            >
           </div>
           <div class="col-2 price-filter__icon-col">
-            <img class="price-filter__icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+            <img
+              class="price-filter__icon"
+              src="assets/icons/ucars-icons/chevron-down.svg"
+            />
           </div>
         </div>
         <!-- Price filter -->
@@ -230,18 +312,32 @@
         >
           <!-- Price filter range label -->
           <div class="row p-2 m-0">
-            <div class="col-5 price-filter__price-limit" (click)="onShowMinPriceSelect()">
-              <label for="minPrice" class="price-filter__price-label">Min</label>
-              <label for="minPrice" class="price-filter__price-value">{{minPriceSelected.label}}</label>
+            <div
+              class="col-5 price-filter__price-limit"
+              (click)="onShowMinPriceSelect()"
+            >
+              <label for="minPrice" class="price-filter__price-label"
+                >Min</label
+              >
+              <label for="minPrice" class="price-filter__price-value"
+                >{{minPriceSelected.label}}</label
+              >
             </div>
 
             <div class="col-2 p-0 price-filter__dash">
               <label class="price-filter__dash-text">-</label>
             </div>
 
-            <div class="col-5 price-filter__price-limit" (click)="onShowMaxPriceSelect()">
-              <label for="maxPrice" class="price-filter__price-label">Max</label>
-              <label for="minPrice" class="price-filter__price-value">{{maxPriceSelected.label}}</label>
+            <div
+              class="col-5 price-filter__price-limit"
+              (click)="onShowMaxPriceSelect()"
+            >
+              <label for="maxPrice" class="price-filter__price-label"
+                >Max</label
+              >
+              <label for="minPrice" class="price-filter__price-value"
+                >{{maxPriceSelected.label}}</label
+              >
             </div>
           </div>
 
@@ -262,7 +358,9 @@
                     formControlName="minPrice"
                     (change)="onChangeMinPrice()"
                   />
-                  <label class="form-check-label" [for]="key"> {{carPriceOptions[key].label}} </label>
+                  <label class="form-check-label" [for]="key">
+                    {{carPriceOptions[key].label}}
+                  </label>
                 </div>
               </div>
             </div>
@@ -282,7 +380,9 @@
                     formControlName="maxPrice"
                     (change)="onChangeMaxPrice()"
                   />
-                  <label class="form-check-label" [for]="key"> {{carPriceOptions[key].label}} </label>
+                  <label class="form-check-label" [for]="key">
+                    {{carPriceOptions[key].label}}
+                  </label>
                 </div>
               </div>
             </div>
@@ -292,11 +392,21 @@
           <div class="price-filter__buttons-wrapper">
             <div class="row m-0 price-filter__buttons">
               <div class="col-6 p-0 price-filter__clear-wrapper">
-                <button class="price-filter__clear-btn" (click)="onClearPriceRange()">Clear</button>
+                <button
+                  class="price-filter__clear-btn"
+                  (click)="onClearPriceRange()"
+                >
+                  Clear
+                </button>
               </div>
 
               <div class="col-6 p-0 price-filter__save-wrapper">
-                <button class="price-filter__save-btn" (click)="onSavePriceRange()">Save</button>
+                <button
+                  class="price-filter__save-btn"
+                  (click)="onSavePriceRange()"
+                >
+                  Save
+                </button>
               </div>
             </div>
           </div>
@@ -309,10 +419,15 @@
         <!-- Vehicle type filter label -->
         <div class="row" (click)="onShowVehicleTypeFilter()">
           <div class="col-10">
-            <label class="vehicle-type-filter__selected-value">{{vehicleTypesSelected}}</label>
+            <label class="vehicle-type-filter__selected-value"
+              >{{vehicleTypesSelected}}</label
+            >
           </div>
           <div class="col-2 vehicle-type-filter__icon-col">
-            <img class="vehicle-type-filter__icon" src="assets/icons/ucars-icons/chevron-down.svg" />
+            <img
+              class="vehicle-type-filter__icon"
+              src="assets/icons/ucars-icons/chevron-down.svg"
+            />
           </div>
         </div>
         <!-- Vehicle type filter popup -->
@@ -337,7 +452,10 @@
                   id="type"
                   formControlName="isSelected"
                 />
-                <label class="vehicle-type-filter__vehicle-type-label" for="type">
+                <label
+                  class="vehicle-type-filter__vehicle-type-label"
+                  for="type"
+                >
                   {{getVehicleTypeFormLabel(i)}}
                 </label>
               </form>
@@ -348,11 +466,21 @@
           <div class="vehicle-type-filter__buttons-wrapper">
             <div class="row m-0 vehicle-type-filter__buttons">
               <div class="col-6 p-0 vehicle-type-filter__clear-wrapper">
-                <button class="vehicle-type-filter__clear-btn" (click)="onClearVehicleTypesSelected()">Clear</button>
+                <button
+                  class="vehicle-type-filter__clear-btn"
+                  (click)="onClearVehicleTypesSelected()"
+                >
+                  Clear
+                </button>
               </div>
 
               <div class="col-6 p-0 vehicle-type-filter__save-wrapper">
-                <button class="vehicle-type-filter__save-btn" (click)="onSaveVehicleTypesSelected()">Save</button>
+                <button
+                  class="vehicle-type-filter__save-btn"
+                  (click)="onSaveVehicleTypesSelected()"
+                >
+                  Save
+                </button>
               </div>
             </div>
           </div>
@@ -360,7 +488,9 @@
       </div>
 
       <div class="car-filter__search-btn-wrapper">
-        <button class="car-filter__search-btn" (click)="carFilter()">Search</button>
+        <button class="car-filter__search-btn" (click)="carFilter()">
+          Search
+        </button>
       </div>
     </div>
   </form>

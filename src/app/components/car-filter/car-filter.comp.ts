@@ -52,7 +52,8 @@ export class CarFilterComp extends BaseComp {
    * Init values
    */
   init() {
-    let doPriceRangeLabel = this.minPriceSelected.label + " - " + this.maxPriceSelected.label;
+    let doPriceRangeLabel =
+      this.minPriceSelected.label + " - " + this.maxPriceSelected.label;
     this.priceRangeLabel = doPriceRangeLabel.replace(/[S]/g, "");
 
     this.initVehicleTypeFilter();
@@ -62,7 +63,9 @@ export class CarFilterComp extends BaseComp {
    * Init array vehicle type filter
    */
   initVehicleTypeFilter() {
-    const vehicleTypeFilter = this.carFilterForm.controls["vehicleTypes"] as FormArray;
+    const vehicleTypeFilter = this.carFilterForm.controls[
+      "vehicleTypes"
+    ] as FormArray;
     for (let key of this.vehicleTypeKeys) {
       const vehicleTypeForm = this.fb.group({
         vehicleType: this.vehicleTypeOptions[key],
@@ -98,7 +101,9 @@ export class CarFilterComp extends BaseComp {
    * @returns vehicleTypeForm label
    */
   getVehicleTypeFormLabel(index: number): string {
-    return String(this.vehicleTypeList.at(index).get("vehicleType")?.value.label);
+    return String(
+      this.vehicleTypeList.at(index).get("vehicleType")?.value.label
+    );
   }
 
   /**
@@ -229,7 +234,8 @@ export class CarFilterComp extends BaseComp {
       this.carFilterForm.controls["maxPrice"].setValue("price100");
     }
 
-    let doPriceRangeLabel = this.minPriceSelected.label + " - " + this.maxPriceSelected.label;
+    let doPriceRangeLabel =
+      this.minPriceSelected.label + " - " + this.maxPriceSelected.label;
     this.priceRangeLabel = doPriceRangeLabel.replace(/[S]/g, "");
     this.hideAllPopup();
   }
@@ -265,6 +271,14 @@ export class CarFilterComp extends BaseComp {
       }
     });
     this.vehicleTypesSelected = "+" + doVehicleTypesSelected + " selected";
+  }
+
+  /**
+   * On select car state
+   */
+  onSelectState() {
+    const carState = this.carFilterForm.get("carState")?.value;
+    this.stateSelected = CAR_STATE_FILTER[carState];
   }
 
   /**
