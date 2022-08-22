@@ -1,4 +1,4 @@
-export interface CarModel {
+export interface ICarModel {
   name: string;
   imgSrc: string;
   price: number;
